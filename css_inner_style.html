@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!--内部样式表-->
+		<!--当单个文件需要特别样式时，就可以使用内部样式表。你可以在<head> 部分通过 <style>标签定义内部样式表:-->
+		<meta charset="UTF-8">
+		<title>css样式</title>
+		<style type="text/css">
+			p {
+				color: red
+			}
+			
+			h2 {
+				color: aqua;
+			}
+		</style>
+	</head>
+
+	<body style="background-color: cornsilk;">
+		<h2 style="color: blue;">CSS标题</h2>
+		<p style="color: red;margin-left: 10px;">CSS段落</p>
+		<h2>标题</h2>
+		<p>段落</p>
+		<!--定义图像的语法是：<img src="url" alt="some_text"> -->
+		<!--Alt属性 在浏览器无法载入图像时，替换文本属性告诉读者她们失去的信息。此时，浏览器将显示这个替代性的文本而不是图像。为页面上的图像都加上替换文本属性是个好习惯，这样有助于更好的显示信息，并且对于那些使用纯文本浏览器的人来说是非常有用的-->
+		<img src="/img" alt="图片" width="50px" height="50px" />
+		<h4>默认对齐的图像 (align="bottom"):</h4>
+		<p>这是一些文本。 <img src="smiley.gif" alt="Smiley face" width="32" height="32"> 这是一些文本。</p>
+
+		<h4>图片使用 align="middle":</h4>
+		<p>这是一些文本。 <img src="smiley.gif" alt="Smiley face" align="middle" width="32" height="32">这是一些文本。</p>
+
+		<h4>图片使用 align="top":</h4>
+		<p>这是一些文本。 <img src="smiley.gif" alt="Smiley face" align="top" width="32" height="32">这是一些文本。</p>
+
+		<p><b>注意:</b>在HTML 4中 align 属性已废弃，HTML5 已不支持该属性，可以使用 CSS 代替。</p>
+
+		<img src="planets.gif" width="150px" height="150px" alt="planets" usemap="#planetmap" />
+		<!--图片映射-->
+		<map name="planetmap">		
+  		<area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+  		<area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+  		<area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+		</map>
+	</body>
+
+</html>

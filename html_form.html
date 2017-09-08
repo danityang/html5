@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>html表单</title>
+	</head>
+
+	<body>
+		<form action="post">
+			name:<input type="text" name="name" /><br /> 
+			<datalist id="browsers">
+				<option value="zhang san">
+  				<option value="li si">
+  				<option value="wang wu">
+  				<option value="chen ma">
+  				<option value="jiu hui">
+			</datalist>
+			passwoed:<input type="password" name="password" />
+		</form>
+		按钮：<input type="button" name="btn" value="按钮" /><br /> 单选框：
+		<input type="radio" name="radio" /><br /> 复选框：
+		<input type="checkbox" name="checkbox" /><br /> 提交按钮：
+		<input type="submit" value="提交按钮" /><br /> 下拉菜单
+		<select name="cars">
+			<optgroup label="豪华车">
+			<option value="bm">宝马</option>
+			<option value="bc">奔驰</option>
+			<option value="ad">奥迪</option>
+			</optgroup>
+			<optgroup label="普通消费汽车">
+			<option value="dz">大众</option>
+			<option value="ww">沃尔沃</option>
+			</optgroup>
+		</select><br />
+		<textarea rows="10" cols="30">
+			文本框
+		</textarea>
+			<fieldset>
+				<legend>Personal information</legend>
+				Name: <input type="text" size="30"><br> 
+				E-mail: <input type="text" size="30"><br> 
+				Date of birth: <input type="text" size="10">
+			</fieldset>
+	</body>
+
+</html>
