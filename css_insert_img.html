@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>css02：引用外部css样式</title>
+		<!-- 外部样式 style.css -->
+		<link rel="stylesheet" type="text/css" href="css/common_css1.css" />
+		<!-- 设置：h3{color:blue;} -->
+		<style type="text/css">
+			/* 内部样式 */
+			h3 {
+				color: green;
+			}
+			body{
+				background:#ffffff url(img/sh_disney04.jpg) no-repeat;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>标题1</h1>
+		<p>段落1</p>
+		<!--多重样式优先级：内联样式）Inline style > （内部样式）Internal style sheet >（外部样式）External style sheet > 浏览器默认样式-->
+		<h3>测试！</h3>
+		<div>
+			
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,17 @@
+div{
+	background-color: aliceblue;
+}
+body{
+	background-image: url('sh_disney04.jpg');
+}
+p{
+	color: chocolate;
+	text-align: left;
+}
+h1{
+	color: #0000FF;
+	margin: 20;
+	text-align: right;
+}
+h3{
+	color: #0000FF

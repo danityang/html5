@@ -1,0 +1,36 @@
+p.posfix{
+	/*不随浏览器滚动*/
+	position: fixed;
+}
+.relative_pos_left{
+	/*相对位置理解为从元素的0,0坐标位置做参考，也就是屏幕的左上角位置*/
+	position: relative;
+	left: -20px;
+	border: 3px solid red;
+}
+.relative_pos_right{
+	position: relative;
+	left: 20px;
+	border: 3px solid gray;
+}
+.absolute_pos_left{
+	position: absolute;
+	left: 0px;
+	border: 3px solid brown;
+}
+.absolute_pos_right{
+	position: absolute;
+	right: 0px;
+	border: 3px solid green;
+}
+p.overflow{
+	/*超出容器的内容处理使用overflow属性*/
+	overflow:scroll;
+}
+p.cursor{
+	/*更改光标样式*/
+	cursor: move;
+	height: 500px;
+	text-align: center
+	border: 3px solid red;
+}

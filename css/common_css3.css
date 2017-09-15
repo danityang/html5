@@ -1,0 +1,30 @@
+p.b{
+	border-color: #0000FF;
+	border-style: solid;
+}
+p.fourth_dege
+{
+    border-top-style:dotted;
+    border-right-style:solid;
+    border-bottom-style:groove;
+    border-left-style:outset;
+}
+h1.hidden {visibility:hidden;}
+h2.hidden {display:none;}
+.center{
+	/*水平居中块级元素 (如 div), 可以使用 margin: auto*/
+	margin: auto;
+	width: 50%;
+	border: 3px solid gold;
+	padding: 10px;
+	text-align: center;
+}
+.right{
+	/*右对齐，使用绝对布局*/
+	position: absolute;
+	right: 0px;
+	width: 60%;
+	border: 5px solid green;
+	padding: 5px;
+	text-align: right;
+}

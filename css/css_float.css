@@ -1,0 +1,13 @@
+.float_img{
+	float: left;
+	width:110px;
+	height:90px;
+	margin:5px;
+}
+
+img 
+{
+	float:right;
+	border:1px dotted black;
+	margin:0px 0px 15px 20px;
+}

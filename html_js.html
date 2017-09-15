@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<script>
+			document.write("hello script!")
+			document.write("<h1>hello script!</h1>")
+
+			function mclick() {
+				document.getElementById("p1").innerHTML = "<p style='border: dashed;'>我点击了按钮</p>"
+				c = document.getElementById("p1");
+				c.style.color = "#FF0000";
+			}
+		</script>
+		<noscript>抱歉，你的浏览器不支持 JavaScript!</noscript>
+
+		<p>不支持 JavaScript 的浏览器会使用 &#169&lt;noscript&gt; 元素中定义的内容（文本）来替代。</p>
+		<p id="p1">JavaScript测试</p>
+		<button type="button" onclick="mclick()">点我撒</button>
+	</body>
+
+</html>
