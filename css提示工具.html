@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>css提示工具</title>
+		<style>
+			.text{
+				display: inline;
+				margin-top: 10px;
+				background: greenyellow;
+			}
+			.tishi_content{
+				position: absolute;
+				visibility: hidden;
+				background: black;
+				color: white;
+				padding: 5px 5px;
+				border-radius: 5px;
+				
+			}
+			
+			.text:hover .tishi_content{
+				display: inline;
+				visibility: visible;
+			}
+		</style>
+	</head>
+	<body>
+		<p>鼠标移动到以下元素:</p>
+		<div class="text">鼠标移动到此处查看效果
+			<p class="tishi_content">提示文本</p>
+		</div>
+		</p>
+	</body>
+</html>

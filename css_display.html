@@ -12,6 +12,15 @@
 				/*元素显示在同一块（换行）*/
 				display: block;
 			}
+			/*元素的隐藏*/
+			p.hidden{
+				/* 实例中的隐藏标题不占用空间*/
+				display: none;
+			}
+			p.invisiable{
+				/*实例中的隐藏标题仍然占用空间*/
+				visibility: hidden;
+			}
 		</style>
 	</head>
 	<body>
@@ -29,5 +38,7 @@
 			<li class="block">汽车</li>
 			<li class="block">热点</li>
 		</ul>
+		<p class="hidden">隐藏的段落1</p>
+		<p class="invisiable">隐藏的段落2</p>
 	</body>
 </html>

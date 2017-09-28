@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>css属性选择器</title>
+		<style>
+			[ti=yd] {
+				border: 5px solid green;
+			}
+			
+			[ti~=ha] {
+				color: red;
+				font-size: 30px;
+			}
+			
+			[lang|=en] {
+				color: blue;
+			}
+			/*TODO 表单样式*/
+			
+			input[type="text"] {
+				width: 150px;
+				display: block;
+				margin-bottom: 10px;
+				background-color: yellow;
+			}
+			
+			input[type="button"] {
+				width: 120px;
+				margin-left: 35px;
+				display: block;
+			}
+		</style>
+	</head>
+
+	<body>
+		<p ti="yd">段落1</p>
+		<p ti="yd">段落2</p>
+		<p ti="danity">段落3</p>
+		<p ti="da">段落4</p>
+		<p ti="ha ha">段落5</p>
+		<p ti="ha ello">段落6</p>
+		<p ti="w ha ats">段落7</p>
+		<p lang="en">Hello!</p>
+		<p lang="en-us">Hi!</p>
+		<p lang="en-gb">Ello!</p>
+		<p lang="us">Hi!</p>
+		<p lang="no">Hei!</p>
+		<form name="input" action="demo-form.php" method="get">
+			Firstname:<input type="text" name="fname" value="Peter" size="20"> Lastname:
+			<input type="text" name="lname" value="Griffin" size="20">
+			<input type="button" value="Example Button">
+
+		</form>
+	</body>
+
+</html>

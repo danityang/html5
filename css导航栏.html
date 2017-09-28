@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>导航栏</title>
+		<style>
+			ul{
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+			li a{
+				display: inline;
+				line-height: 40px;
+				float: left;
+				padding: 10px 20px;
+				margin-left: 0;
+				background-color: gray;
+				overflow: hidden;
+				color: white;
+			}
+			a.active{
+			background: green;
+			color: white;	
+			}
+			a:hover:not(.active){
+				background: gainsboro;
+				color: black;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li><a class="active">热点</a></li>
+			<li><a>体育</a></li>
+			<li><a>房产</a></li>
+			<li><a>新闻</a></li>
+			<li><a>娱乐</a></li>
+		</ul>
+	</body>
+</html>

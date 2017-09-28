@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>组合选择符</title>
+		<style>
+			/*后代选择器*/
+			
+			div p {
+				background-color: yellow;
+			}
+			/*子元素选择器——Child selectors只能选择作为某元素子元素的元素*/
+			
+			div>p {
+				background-color: yellow;
+			}
+			/*相邻兄弟选择器（Adjacent sibling selector）可选择紧接在另一元素后的元素，且二者有相同父元素,
+			 也就是说，对元素本身不起作用，而对相邻的下一个元素起效*/
+			div+p
+			{
+				background-color:yellow;
+			}
+			/*后续兄弟选择器选取所有指定元素之后的相邻兄弟元素。*/
+			
+			div~p
+			{
+ 				 background-color:yellow;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<p>段落 1。 在 div 中。</p>
+			<p>段落 2。 在 div 中。</p>
+		</div>
+
+		<p>段落 3。不在 div 中。</p>
+		<p>段落 4。不在 div 中。</p>
+
+		<h1>Welcome to My Homepage</h1>
+		<div>
+			<h2>My name is Donald</h2>
+			<p>I live in Duckburg.</p>
+		</div>
+
+		<div>
+			<span><p>I will not be styled.</p></span>
+		</div>
+
+		<p>My best friend is Mickey.</p>
+	</body>
+	</body>
+
+</html>

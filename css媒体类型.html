@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>css媒体类型</title>
+		<style>
+			@media screen{
+				p.te{
+					font-family:verdana,sans-serif;
+					font-size:30px;
+				}
+			}
+			@media print{
+				p.pr{
+					font-family:verdana,sans-serif;
+					font-size:30px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!--媒体类型允许你指定文件将如何在不同媒体呈现。该文件可以以不同的方式显示在屏幕上，在纸张上，或听觉浏览器等等-->
+		<p class="te">段落1</p>
+		<p class="pr">段落2</p>
+	</body>
+</html>
